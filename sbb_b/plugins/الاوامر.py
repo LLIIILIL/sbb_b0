@@ -9,6 +9,7 @@ async def hi(event):
         link_preview=False,
     )
 
+
 @sbb_b.ar_cmd(pattern="اوامر التحكم")
 async def hi(event):
     await edit_or_reply(
