@@ -112,7 +112,7 @@ async def autobio_loop():
             if normal in normzltext:
                 namefont = namerzfont[normzltext.index(normal)]
                 HI = HI.replace(normal, namefont)
-        bio = f"{DEFAULTUSERBIO} {HI}"
+        bio = f"{DEFAULTUSERBIO} 𓆩{HI}𓆪"
         LOGS.info(bio)
         try:
             await sbb_b(functions.account.UpdateProfileRequest(about=bio))
